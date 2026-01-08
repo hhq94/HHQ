@@ -1,44 +1,16 @@
-<svg width="256" height="256" viewBox="0 0 256 256"
-     xmlns="http://www.w3.org/2000/svg">
-
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="40" viewBox="0 0 64 40" role="img" aria-label="红色开关 - 关闭">
+  <title>红色开关 - 关闭</title>
   <defs>
-    <linearGradient id="ringGradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ff3b3b"/>
-      <stop offset="50%" stop-color="#ff6a00"/>
-      <stop offset="100%" stop-color="#ff2d55"/>
-    </linearGradient>
-
-    <radialGradient id="innerGradient" cx="30%" cy="30%" r="70%">
-      <stop offset="0%" stop-color="#7f1d1d"/>
-      <stop offset="100%" stop-color="#1f0303"/>
-    </radialGradient>
-
-    <filter id="redGlow">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="shadow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
     </filter>
   </defs>
 
-  <circle cx="128" cy="128" r="110"
-          fill="url(#ringGradient)"/>
+  <!-- 轨道（关闭为灰色） -->
+  <rect x="4" y="6" width="56" height="28" rx="14" fill="#e6e6e6"/>
 
-  <circle cx="128" cy="128" r="88"
-          fill="url(#innerGradient)"/>
-
-  <path d="M128 70
-           A58 58 0 1 1 127.9 70"
-        fill="none"
-        stroke="#ff4d4d"
-        stroke-width="14"
-        stroke-linecap="round"
-        filter="url(#redGlow)"/>
-
-  <line x1="128" y1="52" x2="128" y2="98"
-        stroke="#ff4d4d"
-        stroke-width="14"
-        stroke-linecap="round"
-        filter="url(#redGlow)"/>
+  <!-- 圆钮（左侧，带微弱红色描边以保留“红色风格”） -->
+  <g filter="url(#shadow2)">
+    <circle cx="18" cy="20" r="12" fill="#ffffff" stroke="#ff4d4f" stroke-opacity="0.08" />
+  </g>
 </svg>
