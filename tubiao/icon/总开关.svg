@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">红色圆形开关 Logo（完整圆环）</title>
-  <desc id="desc">圆形红色开关 logo，电源符号的圆环为完整闭合圆，带渐变、光泽与阴影。</desc>
+  <title id="title">红色圆形开关 Logo（完整圆环，竖线超出）</title>
+  <desc id="desc">圆形红色开关 logo，电源符号的圆环为完整闭合圆，竖线顶部突出超出圆环上沿，带渐变、光泽与阴影。</desc>
 
   <defs>
     <!-- 主体径向渐变 -->
@@ -51,16 +51,15 @@
   <!-- 高光 -->
   <ellipse cx="100" cy="92" rx="58" ry="28" fill="url(#gGloss)" opacity="0.95"/>
 
-  <!-- 电源/开关符号：此处圆环为完整闭合圆 -->
+  <!-- 电源/开关符号：完整圆环 -->
   <circle cx="128" cy="128" r="44" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.98"/>
 
-  <!-- 竖线（表示“开”） -->
-  <line x1="128" y1="84" x2="128" y2="116" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.98"/>
+  <!-- 竖线延长，突出白圈之上 -->
+  <line x1="128" y1="70" x2="128" y2="116" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" opacity="0.98"/>
 
   <!-- 细微中性色高光（环形外沿） -->
   <circle cx="128" cy="128" r="104" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
 
-  <!-- 可选：小型白色点（增加生动感） -->
+  <!-- 小型白色点（增加生动感） -->
   <circle cx="170" cy="90" r="4.2" fill="rgba(255,255,255,0.9)" opacity="0.9"/>
-
 </svg>
