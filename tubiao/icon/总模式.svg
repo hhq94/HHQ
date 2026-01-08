@@ -43,7 +43,7 @@
   </defs>
 
   <!-- 主体整体放大 15% -->
-  <g transform="translate(128 128) scale(1.25) translate(-128 -128)">
+  <g transform="translate(128 128) scale(1.15) translate(-128 -128)">
 
     <!-- 投影和外圈 -->
     <g filter="url(#fDrop)">
