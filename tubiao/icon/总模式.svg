@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="256" height="256"
+     viewBox="0 0 256 256"
+     role="img"
+     aria-labelledby="title desc">
+
+  <title id="title">红色圆形开关 Logo（放大 15%）</title>
+  <desc id="desc">主体整体放大 15%，居中显示，完整圆环，竖线超出圆环。</desc>
+
+  <defs>
+    <!-- 主体径向渐变 -->
+    <radialGradient id="gMain" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#ff9a9a"/>
+      <stop offset="55%" stop-color="#ff4949"/>
+      <stop offset="100%" stop-color="#b20000"/>
+    </radialGradient>
+
+    <!-- 环形边缘高光 -->
+    <linearGradient id="gRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.15)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.12)"/>
+    </linearGradient>
+
+    <!-- 高光光斑 -->
+    <radialGradient id="gGloss" cx="30%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.95)"/>
+      <stop offset="55%" stop-color="rgba(255,255,255,0.35)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+
+    <!-- 投影 -->
+    <filter id="fDrop" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset in="SourceAlpha" dx="0" dy="6"/>
+      <feGaussianBlur stdDeviation="8"/>
+      <feColorMatrix type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0.28"/>
+      <feBlend in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- 主体整体放大 15% -->
+  <g transform="translate(128 128) scale(1.25) translate(-128 -128)">
+
+    <!-- 投影和外圈 -->
+    <g filter="url(#fDrop)">
+      <circle cx="128" cy="128" r="120"
+              fill="none"
+              stroke="url(#gRim)"
+              stroke-width="8"
+              opacity="0.85"/>
+
+      <circle cx="128" cy="128" r="104"
+              fill="url(#gMain)"
+              stroke="rgba(0,0,0,0.12)"
+              stroke-width="3"/>
+    </g>
+
+    <!-- 内部暗环 -->
+    <circle cx="128" cy="128" r="78"
+            fill="rgba(0,0,0,0.06)"/>
+
+    <!-- 高光 -->
+    <ellipse cx="100" cy="92"
+             rx="58" ry="28"
+             fill="url(#gGloss)"
+             opacity="0.95"/>
+
+    <!-- 电源圆环 -->
+    <circle cx="128" cy="128" r="44"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-width="14"
+            stroke-linecap="round"
+            opacity="0.98"/>
+
+    <!-- 竖线（超出白圈） -->
+    <line x1="128" y1="70" x2="128" y2="116"
+          stroke="#FFFFFF"
+          stroke-width="14"
+          stroke-linecap="round"
+          opacity="0.98"/>
+
+    <!-- 外沿细高光 -->
+    <circle cx="128" cy="128" r="104"
+            fill="none"
+            stroke="rgba(255,255,255,0.06)"
+            stroke-width="2"/>
+
+    <!-- 装饰光点 -->
+    <circle cx="170" cy="90" r="4.2"
+            fill="rgba(255,255,255,0.9)"/>
+  </g>
+</svg>
