@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="40" viewBox="0 0 64 40" role="img" aria-label="红色开关 - 关闭">
-  <title>红色开关 - 关闭</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="40" viewBox="0 0 64 40" role="img" aria-label="红色开关 - 开启">
+  <title>红色开关 - 开启</title>
   <defs>
-    <filter id="shadow2" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.18"/>
     </filter>
   </defs>
 
-  <!-- 轨道（关闭为灰色） -->
-  <rect x="4" y="6" width="56" height="28" rx="14" fill="#e6e6e6"/>
+  <!-- 轨道 -->
+  <rect x="4" y="6" width="56" height="28" rx="14" fill="#ff4d4f"/>
 
-  <!-- 圆钮（左侧，带微弱红色描边以保留“红色风格”） -->
-  <g filter="url(#shadow2)">
-    <circle cx="18" cy="20" r="12" fill="#ffffff" stroke="#ff4d4f" stroke-opacity="0.08" />
+  <!-- 圆钮（带阴影） -->
+  <g filter="url(#shadow)">
+    <circle cx="46" cy="20" r="12" fill="#ffffff"/>
   </g>
 </svg>
