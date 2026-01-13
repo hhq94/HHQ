@@ -1,0 +1,52 @@
+<svg role="img" viewBox="0 0 24 24"
+     xmlns="http://www.w3.org/2000/svg"
+     width="200" height="200">
+
+  <title>Google Gemini - Directional Gradient</title>
+
+  <defs>
+    <radialGradient id="red_top" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#EA4335" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#EA4335" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="blue_right" cx="100%" cy="50%" r="110%">
+      <stop offset="0%" stop-color="#4285F4" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4285F4" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="green_bottom" cx="50%" cy="100%" r="80%">
+      <stop offset="0%" stop-color="#34A853" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#34A853" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="yellow_left" cx="0%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FBBC05" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FBBC05" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="gemini_mask">
+      <path d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68
+               .96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12
+               q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58
+               12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0
+               q0 2.49-.96 4.68-.93 2.19-2.55 3.81
+               a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12
+               q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81"/>
+    </clipPath>
+  </defs>
+
+  <!-- 🔍 关键：整体放大并居中 -->
+  <g clip-path="url(#gemini_mask)"
+     transform="translate(12 12) scale(1.20) translate(-12 -12)">
+
+    <rect width="24" height="24" fill="#FFFFFF"/>
+
+    <g style="mix-blend-mode: multiply;">
+      <rect width="24" height="24" fill="url(#blue_right)"/>
+      <rect width="24" height="24" fill="url(#red_top)"/>
+      <rect width="24" height="24" fill="url(#green_bottom)"/>
+      <rect width="24" height="24" fill="url(#yellow_left)"/>
+    </g>
+  </g>
+</svg>
